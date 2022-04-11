@@ -1,0 +1,38 @@
+package chain
+
+import "errors"
+
+// errors
+var (
+	ErrInvalidVersion             = errors.New("invalid version")
+	ErrInvalidHeight              = errors.New("invalid height")
+	ErrInvalidPrevHash            = errors.New("invalid prev hash")
+	ErrInvalidTimestamp           = errors.New("invalid timestamp")
+	ErrInvalidGenerator           = errors.New("invalid generator")
+	ErrApplicationIDMustBe255     = errors.New("application id must be 255")
+	ErrAddBeforeChainInit         = errors.New("add before chain init")
+	ErrReservedID                 = errors.New("reserved id")
+	ErrNotExistService            = errors.New("not exist service")
+	ErrExistServiceName           = errors.New("exist service name")
+	ErrExistServiceID             = errors.New("exist service id")
+	ErrChainClosed                = errors.New("chain closed")
+	ErrInvalidContextHash         = errors.New("invalid context hash")
+	ErrInvalidLevelRootHash       = errors.New("invalid level root hash")
+	ErrStoreClosed                = errors.New("store closed")
+	ErrInvalidChainID             = errors.New("invalid chain id")
+	ErrAlreadyGenesised           = errors.New("already genesised")
+	ErrAlreadyInitialzed          = errors.New("already initialized")
+	ErrExceedHashCount            = errors.New("exceed hash count")
+	ErrInvalidHashCount           = errors.New("invalid hash count")
+	ErrInvalidAdminAddress        = errors.New("invalid admin address")
+	ErrInvalidSeqType             = errors.New("invalid sequence type")
+	ErrUnknownTransactionMethod   = errors.New("unknown transaction method")
+	ErrInvalidTopAddress          = errors.New("invalid top address")
+	ErrInvalidTopSignature        = errors.New("invalid top signature")
+	ErrInvalidSignatureCount      = errors.New("invalid signature count")
+	ErrInsufficientCandidateCount = errors.New("insufficient candidate count")
+	ErrInvalidPhase               = errors.New("invalid phase")
+	ErrExistAddress               = errors.New("exist address")
+	ErrExceedCandidateCount       = errors.New("exceed candidate count")
+	ErrFoundForkedBlock           = errors.New("found forked block")
+)
